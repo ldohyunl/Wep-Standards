@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>html_o,p,q,r,s</title>
+</head>
+<body>
+  
+  <h1>O</h1>
+  <pre>
+    - object : 이미지나 음악 영상을 링크(지금은 잘 사용하지 않고 video, audio를 더 많이 사용함)
+    <object data="img/apple.jpg"></object>
+    <img src="img/apple.jpg">
+    - ol : 오더리스트(숫자가 들어가는 리스트)
+    <ol>
+      <li>one</li>
+      <li>two</li>
+      <li>three</li>
+    </ol>
+    - optgroup : 옵션에서 그룹 별로 분할
+    - option : 옵션
+    <label for="cars">Choose a car</label>
+    <select>
+      <optgroup label="swedish cars">
+        <option>Volvo</option>
+        <option>Saab</option>
+      </optgroup>
+      <optgroup label="German Cars">
+        <option>Benz</option>
+        <option>BMW</option>
+      </optgroup>
+    </select>
+    - output : 계산된 값을 출력하는 태그
+    <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+    <input type="range" id="a" value="50"> + 
+    <input type="number" id="b" value="25">  
+    = <output name="x" for="a b"></output>
+    </form> 
+  </pre>
+
+  <h1>P</h1>
+  <pre>
+    - p : 단락(한줄씩 끊어쓰기 위함)
+    - param : 매개변수(요소에 대한 매개변수를 정의하는데 사용됨)
+    <object data="horse.wav">
+    <param name="autoplay" value="ture">
+    </object>
+    - picture : 이미지세트 태그(해상도별로 다른 이미지가 나오는 태그)
+    <picture>
+    <source media="(min-width:650px)" srcset="img/img_pink_flowers.jpg">
+    <source media="(min-width:465px)" srcset="img/img_white_flower.jpg">
+    <source media="(min-width:768px)" srcset="img/img_orange_flowers.jpg">
+    <img src="img/img_orange_flowers.jpg" alt="Flowers" style="width:auto">
+    </picture>
+    - pre : 쓰는 대로 써지는 태그
+    - progress : 게이지
+    <label for="file">Downloading</label>
+    <progress id="file" value="32" max="100">32</progress>
+  </pre>
+
+  <h1>Q</h1>
+  <pre>
+
+  </pre>
+
+  <h1>R</h1>
+  <pre>
+
+  </pre>
+  <h1>S</h1>
+  <pre>
+
+  </pre>
+  
+</body>
+</html>
