@@ -1,0 +1,101 @@
+@import "reset";
+input[type=checkbox]{accent-color: green;}
+input[type=radio]{accent-color:  pink;}
+input[type=range]{accent-color: skyblue;}
+
+#main{
+  width: 70px; 
+  height: 300px; 
+  border:1px solid #c3c3c3;
+  display: flex;/*가로 엘리먼트 정렬*/
+  flex-wrap: wrap;
+  align-content: center;
+  div{
+    width: 70px; 
+    height: 70px; 
+  }
+}
+.coral{
+  background-color: coral;
+}
+.lightblue{
+  background-color: lightblue;
+}
+.pink{
+  background-color: pink;
+}
+
+.parent{
+  width:100%;
+  height:300px;
+  border:1px solid black;
+  display: flex;
+  justify-content: center;/*가로 가운데 정렬*/
+  align-items: center; /*세로 가운데 정렬*/
+  .child{
+    background-color: violet;
+    width: 100px; height: 100px;
+    display: flex;
+    justify-content: center;/*가로 가운데 정렬*/
+    align-items: center;/*세로 가운데 정렬*/
+  }
+}
+.vm, .ai{
+  width:100%;
+  height:200px;
+  border:1px solid black;
+
+}
+.vm{
+  vertical-align: middle;
+}
+
+.ai{ 
+  display:flex; 
+  align-items: center;
+}
+
+.all{
+  width: 220px; height: 300px; border:1px solid black;
+  display: flex; 
+  align-items: flex-start;
+  div{flex:1;}/*동일한 면적*/
+  #alone{align-self: center;}
+}
+.lightgreen{background-color: lightgreen;}
+
+#ex1{
+  background-color: yellow;
+  color:red;
+}
+#ex2{
+  background-color: yellow;
+  color:red;
+  all:inherit;
+}
+#ex3{
+  background-color: yellow;
+  color:red;
+  all:unset;
+}
+
+.rect{
+  width: 100px; height: 100px; 
+  background:red;
+  animation: move 2s infinite;
+  position: relative;
+}
+@keyframes move{
+  from{left:0px;}
+  to{left:600px;}
+}
+
+// 보더
+.b1, .b2, .b3{
+  width: 100px; 
+  height: 100px;
+  display:inline-block;//블록형태로 가로 정렬
+}
+.b1{border:5px solid green;}
+.b2{border:4px dotted blue;}
+.b3{border:double}
