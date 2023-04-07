@@ -170,3 +170,82 @@ input[type="text"]{
 .cursor{
   cursor:zoom-in;
 }
+.rtl{direction:rtl;}
+
+//디스플레이
+.display{
+    .inline{
+    
+     li{display:inline;border:1px solid black;}
+    }
+    .block{
+    background-color:red;
+    color:white;
+    display:block;
+    padding:10px;
+    }
+    .none{display:none;}
+}
+.empty-cell{
+    empty-cells:hide;
+    border:1px solid;
+    tr{
+        td{
+border:1px solid;
+        }
+    }
+  }
+
+.image {
+    display:flex;
+    img{width:33.3%}
+    .blur{filter:blur(100px);}
+    .grayscale{filter:grayscale(100%); transition:all 1s ease-in-out;}
+    .grayscale:hover{filter:grayscale(0%);}
+    .opacity{filter:opacity(50%);}
+}
+.flex{
+    display:flex;
+    .w800{width:800px; height:100px; border:1px solid;}
+}
+.float{
+    div{width:800px; height:100px; border:1px solid;float:left;}
+}
+
+//플렉스 컨테이너
+.flex-container{
+    flex-wrap:wrap;
+    margin-top:60px;
+    display:flex;
+    .left{flex:50%; background:#f1f1f1; padding:10px;}
+    .right{flex:50%;background:blue; padding:10px;}
+}
+
+//반응형 미디어 쿼리 800px이상일때는 현재 상태를 유지
+//그이하일때 레이아웃변경
+@media (max-width: 800px){
+    .flex-container{
+        .left, .right {
+            flex:100%;
+        }
+    }
+}
+.basis{
+    width:300px;
+    height:100px;
+    border:1px solid;
+    display:flex;
+    div{
+    flex-basis: 50px;
+    }
+    div:nth-of-type(2){
+        flex-basis:100px;
+    }
+}
+
+
+.coral{background-color: coral;}
+.lightblue{background-color: lightblue;}
+.khaki{background-color: khaki;}
+.pink{background-color: pink;}
+.lightgrey{background-color: lightgrey;}
